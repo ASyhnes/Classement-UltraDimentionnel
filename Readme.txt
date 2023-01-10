@@ -57,3 +57,5 @@ Un des avantages que je vois à imaginer une indexation multidimensionnelle est 
 Par exemple, dans une liste linéaire de 1 à 999898, il faut parcourir 999898 points avant d'atteindre la donnée souhaitée.
  En imaginant un classement multidimensionnel, on peut donner un chiffre de départ,
  un vecteur et une force pour définir une liste, permettant ainsi de minimiser la liste de chiffres intermédiaires.
+
+Note: 
