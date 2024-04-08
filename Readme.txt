@@ -1,16 +1,16 @@
 Le projet de classement ultradimensionnel est un projet dont je ne perçois pas encore l'utilité finale.
  Partant du principe qu'il n'est pas nécessairement à l'inventeur d'un outil de trouver sa meilleure exploitation et que,
  même s'il n'y a pas d'utilité, cela reste un exercice intéressant à mettre en place,
- j'ai donc décidé de développer ce système de classement dans les mois à venir.
+ j'ai donc décidé de développer ce système de classement lorsque mes compétences me le permettrons..
 
 
-NOTA: Je dois fournir des graphiques pour exlicité l'idée, surtout sur la partie finale qui manque d'objectivité 
+NOTA: Je dois fournir des graphiques pour exlicité l'idée, surtout sur la partie finale manquant d'objectivité 
 dans la présentation.
 
-RESUME: Le projet de classement ultradimensionnel vise à créer un système permettant de stocker de grandes quantités
- de données de manière compacte en utilisant une indexation multidimensionnelle. 
+RESUME: Le projet de classement "ultradimensionnel" vise à créer un système permettant de stocker de grandes quantités
+ de données de manière compacte en utilisant une indexation "multidimensionnelle". 
 Cela signifie que les données sont organisées dans un espace à plusieurs dimensions plutôt que dans une liste linéaire.
- Cela permet de raccourcir les chemins parcourus pour accéder à une donnée donnée 
+ Cela permet de raccourcir les chemins parcourus pour accéder à une donnée 
 et de minimiser la liste de chiffres intermédiaires.
  Le système utilise également un hachage intégré aux données elles-mêmes pour permettre de 
 stocker ces données de manière plus efficace. Le projet nécessitera des connaissances en algorithme et 
