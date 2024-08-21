@@ -9,3 +9,6 @@
 # noombre de dimention 2: compris entre 0 et 999,999,999,999. coordonnée ?????
 
 # deuxiéme problématique: générer une visualisation dans l'espace d'un empilement de cube dans un autre empillement de cube sous forme de dimention qui se replie sur elle même.
+   # debut de piste: 999 est affiché dans un cube. 1999: on affiche 999 dans le cube de dimention 1, lui meme placé dans un cube de dimention 2. on déplace le cube dans la cordonné 0, 1, 0 du cube de dimention 2. SI c'est 11999, on deplace ce même cube, en dimention 1,1, 0 et 328999 en dimention 8,2,3
+
+
