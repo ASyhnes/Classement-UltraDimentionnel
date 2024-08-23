@@ -85,7 +85,6 @@ Ce modèle de repliement dimensionnel a des implications intéressantes dans plu
 ## **Applications Potentielles et Perspectives**
 Les applications de ce modèle sont nombreuses :
 - **Science des Données** : Organisation et compression de données multidimensionnelles.
-- **Biologie et Modélisation Multi-échelles** : Représentation d’organismes ou systèmes complexes à différentes échelles.
 - **Intelligence Artificielle** : Modélisation d’espaces conceptuels ou sémantiques.
 - **Cryptographie** : Systèmes cryptographiques basés sur des structures spatiales hiérarchiques.
 - **Exploration Mathématique** : Découverte de nouvelles relations géométriques à partir des intersections spatiales.
@@ -93,12 +92,14 @@ Les applications de ce modèle sont nombreuses :
 *Ces applications sont prometteuses mais nécessitent des expérimentations pour prouver la réelle plus-value de cette approche par rapport aux méthodes déjà établies*.
 
 ## **Conclusion**
-C projet offre une approche originale pour structurer et visualiser des données de manière hiérarchique, tout en exploitant les concepts de repliement spatial et d’imbrication. Il se distingue par sa capacité à organiser des espaces vastes en les subdivisant de manière cohérente et compacte. Que ce soit pour l’analyse des données, la cryptographie ou la recherche théorique en mathématiques, ce modèle ouvre des perspectives intéressantes et mérite d’être exploré plus en profondeur.
+Ce projet offre une approche originale pour structurer et visualiser des données de manière hiérarchique, tout en exploitant les concepts de repliement spatial et d’imbrication. Il se distingue par sa capacité à organiser des espaces vastes en les subdivisant de manière cohérente et compacte. Que ce soit pour l’analyse des données, la cryptographie ou la recherche théorique en mathématiques, ce modèle ouvre des perspectives intéressantes et mérite d’être exploré plus en profondeur.
 
 ---
 
 ### **Résumé des Points Critiques (en italique) :**
-1. Le système repose sur une structure spatiale hiérarchique qui, bien qu’intéressante, peut devenir complexe à manipuler pour de grandes échelles ou des ensembles de données très vastes.
+1. Le système repose sur une structure spatiale hiérarchique qui, bien qu’intéressante, peut devenir complexe à manipuler pour de grandes échelles ou des ensembles de données très vastes. Bien que l'objectif final soit de simplifier une approche organisationnelle, il est important de réguliérement prendre du recule sur le projet afin d'éviter l'inverse de notre objectif.
 2. L’idée de compression et d’optimisation mémoire est théoriquement solide, mais son efficacité pratique dépendra des implémentations spécifiques.
 3. Le potentiel cryptographique est là, mais il nécessiterait des recherches supplémentaires pour prouver la robustesse du modèle face aux standards actuels.
-4. Les découvertes géométriques ou mathématiques à partir des intersections d’espaces sont intrigantes, mais il faudra vérifier si elles sont effectivement exploitables et significatives.
+4. Il est à noté que je dois encore dévellopper les notions de cubes mirroires, impliquants le quesionnement des cubes voisins lorsque des informations sont stoquées sur une face d'un cube. En effet, deux cubes en contactes par une face où par une arréte commune peuvent avoir une même information ayant une double (voir dans 8fois certains cas) localisation spaciale.
+Ce point est il me semble, avec le questionnement des vecteurs allant d'une dimention à une autre, un point trés intéréssant à creuser.
+5. Les découvertes géométriques ou mathématiques à partir des intersections d’espaces sont intrigantes, mais il faudra vérifier si elles sont effectivement exploitables et significatives.
