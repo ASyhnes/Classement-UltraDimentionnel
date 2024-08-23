@@ -113,7 +113,7 @@ Les formes géométriques qui émergent du réseau de vecteurs peuvent être uti
 ## Visualisation de Corrélations
 L’idée d’utiliser un espace tridimensionnel pour visualiser des corrélations entre des données numériques est puissante. En ajustant l’échelle, en filtrant certains vecteurs ou en explorant les intersections de certaines figures, il serait possible de mettre en évidence des patterns spécifiques qui ne sont pas visibles dans une liste de nombres classique.
 
-![Premier screen du test vectoriel](images/vecteurs-fibbo.jpg) ![Premier screen du test vectoriel](images/vecteurs-fibbo2.jpg)
+![Premier screen du test vectoriel](images/vecteurs-fibbo.jpg.jpg) ![Premier screen du test vectoriel](images/vecteurs-fibbo2.jpg.jpg)
 ## Premier test suite fibbo
 
 ## Conclusion
