@@ -14,7 +14,8 @@ def calculer_vecteur_et_angles(x1, y1, z1, x2, y2, z2):
     
     # Angle d'élévation (en degrés)
     if magnitude == 0:
-        phi = 0  # éviter la division par zéro
+        phi = 0  
+    # éviter la division par zéro
     else:
         phi = math.degrees(math.acos(vz / magnitude))
     

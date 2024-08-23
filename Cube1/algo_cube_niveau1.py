@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
+from mpl_toolkits.mplot3d import Axes3D, art3d
 import numpy as np
 
 # Définir la classe Cube
@@ -33,7 +33,7 @@ def draw_cube(ax, origin_x, origin_y, origin_z, size):
         [vertices[0], vertices[4]], [vertices[1], vertices[5]], [vertices[2], vertices[6]], [vertices[3], vertices[7]]
     ]
     for edge in edges:
-        ax.plot3D(*zip(*edge), color="black")
+        ax.plot3D(*zip(*edge), color=(0, 0, 1, 0.3), linewidth=0.7)  # Bleu transparent avec une faible épaisseur
 
 # Convertir un nombre en coordonnées dans cube2
 def number_to_coordinates_cube2(number):
@@ -44,6 +44,33 @@ def number_to_coordinates_cube2(number):
         return x * 10, y * 10, z * 10  # Multiplier par 10 pour l'échelle de cube2
     else:
         raise ValueError("Le nombre doit être compris entre 0 et 999 pour cube2.")
+
+# Ajouter un cube coloré et transparent
+def draw_colored_transparent_cube(ax, origin_x, origin_y, origin_z, size, color='red', alpha=0.3):
+    # Définir les faces du cube
+    faces = [
+        # Face avant
+        [[origin_x, origin_y, origin_z], [origin_x + size, origin_y, origin_z],
+         [origin_x + size, origin_y + size, origin_z], [origin_x, origin_y + size, origin_z]],
+        # Face arrière
+        [[origin_x, origin_y, origin_z + size], [origin_x + size, origin_y, origin_z + size],
+         [origin_x + size, origin_y + size, origin_z + size], [origin_x, origin_y + size, origin_z + size]],
+        # Face gauche
+        [[origin_x, origin_y, origin_z], [origin_x, origin_y, origin_z + size],
+         [origin_x, origin_y + size, origin_z + size], [origin_x, origin_y + size, origin_z]],
+        # Face droite
+        [[origin_x + size, origin_y, origin_z], [origin_x + size, origin_y, origin_z + size],
+         [origin_x + size, origin_y + size, origin_z + size], [origin_x + size, origin_y + size, origin_z]],
+        # Face supérieure
+        [[origin_x, origin_y + size, origin_z], [origin_x + size, origin_y + size, origin_z],
+         [origin_x + size, origin_y + size, origin_z + size], [origin_x, origin_y + size, origin_z + size]],
+        # Face inférieure
+        [[origin_x, origin_y, origin_z], [origin_x + size, origin_y, origin_z],
+         [origin_x + size, origin_y, origin_z + size], [origin_x, origin_y, origin_z + size]]
+    ]
+    
+    # Créer une collection de polygones 3D pour représenter les faces du cube
+    ax.add_collection3d(art3d.Poly3DCollection(faces, facecolors=color, linewidths=0.7, edgecolors=(0, 0, 1, 0.3), alpha=alpha))
 
 # Créer un cube de taille 10x10x10 (cube1)
 cube1 = Cube(size=10)
@@ -86,8 +113,7 @@ ax.set_ylabel('Y')
 ax.set_zlabel('Z')
 
 # Fixer le ratio des axes pour que le cube apparaisse proportionnel
-ax.set_box_aspect([1,1,1])  
-# Maintient une échelle égale sur les axes
+ax.set_box_aspect([1,1,1])  # Maintient une échelle égale sur les axes
 
 # Affichage du cube2
 ax.set_xlim(0, 99)
@@ -101,6 +127,9 @@ for (x, y, z) in cube1.get_points():
 
 # Dessiner les contours de cube1 à l'intérieur de cube2
 draw_cube(ax, cube2_x, cube2_y, cube2_z, 10)
+
+# Ajouter le cube coloré et transparent à l'intérieur de cube2
+draw_colored_transparent_cube(ax, cube2_x, cube2_y, cube2_z, 10, color='red', alpha=0.3)
 
 # Affichage final
 plt.show()
