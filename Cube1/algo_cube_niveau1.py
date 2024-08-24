@@ -32,8 +32,9 @@ def draw_cube(ax, origin_x, origin_y, origin_z, size):
         [vertices[4], vertices[5]], [vertices[4], vertices[6]], [vertices[5], vertices[7]], [vertices[6], vertices[7]],
         [vertices[0], vertices[4]], [vertices[1], vertices[5]], [vertices[2], vertices[6]], [vertices[3], vertices[7]]
     ]
-    for edge in edges:
-        ax.plot3D(*zip(*edge), color=(0, 0, 1, 0.3), linewidth=0.7)  # Bleu transparent avec une faible épaisseur
+    # couleur des arétes
+    for edge in edges: 
+        ax.plot3D(*zip(*edge), color=(0, 0, 1, 0.3), linewidth=0.7)  
 
 # Convertir un nombre en coordonnées dans cube2
 def number_to_coordinates_cube2(number):
